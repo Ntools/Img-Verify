@@ -1,0 +1,14 @@
+/*
+Img-Verify:
+
+ Copyright(c) Nobby Noboru Hirano 2013-2014 Allrights Reserved.
+ LICENSE bsd show LICENSE file.
+
+画像認証をphpで書いたものです。
+多くのCAPTCHA「画像認証」は読みづらいだとか　０(ゼロ)と　O(オー)の区別がつきづらいなどの
+問題を解消しています。
+
+使用法は　sample.php を参照してください。sampleは自由に改変してみると良いでしょう。
+O(オー)は全く使用せず　数字の０(ゼロ)だけが表示されます。
+BSDライセンスなので商用でも何でもOKですが、書籍等に載せる場合は連絡くださいね（自由ですが）
+*/
