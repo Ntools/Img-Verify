@@ -13,7 +13,7 @@
 <!--
 body {
   color: black
-  font-size: 80%;
+  font-size: 75%;
 }
 -->
 </style> 
@@ -47,39 +47,37 @@ body {
 // BELOW THIS LINE YOU CAN WRITE HTML CODE OR ANYTHING ELSE.
 ?>
 
-
 <table width="500" border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td><p>Here comes the HTML 
-        code or any other code you want. Since we did NOT<br />
+    <td>
+    Here comes the HTML 
+        code or any other code you want.<br />
         write anything to the output yet, you might even use <strong>Header()</strong>;</font></p>
       <hr size="1" noshade="noshade" />
       <p>Please type 
         the code you see in the image into the textfield below. If you cannot 
         read the code, just press &quot;<strong>Reload</strong>&quot; to generate 
-        a new one.</font></p>
-      <p align="center"><img src="imgdisp.php?<?php echo SID ?>" /></font></p>
+        a new image.
+      <div align="center"><img src="imgdisp.php?<?php echo SID ?>" /></div>
       <form action="verificate.php" method="POST" name="frmImgVerific" target="_self" id="frmImgVerific">
         <p> Enter the code 
-          here: </font> 
+          here: 
           <input name="txtCode" autocomplete="off" type="text" id="txtCode" size="30" />
         </p>
         <p>
           <input type="submit" name="Submit" value="OK" />
         </p>
       </form>
-      <p align="center"><B>Note:</b> The code you enter is case sensitive!
-      </p>
     </td>
   </tr>
 </table>
 
 <hr>
 <div id="futter">Produced by Nobby Noboru Hirano <br>
-Designed by <a href="/mailtx/" target="_blank">Nobby Noboru Hirano </a></div>
+Designed by <a href="http://mxkv.com/mailtx/" target="_blank">Nobby Noboru Hirano </a></div>
 <div id=fter>Last modified:
 <?php
-  $d = filectime("index.php");
+  $d = filectime($_SERVER['SCRIPT_FILENAME']);
   $t = date("D M d Y H:i:s ", $d);
   printf("%s", $t);
 ?>
